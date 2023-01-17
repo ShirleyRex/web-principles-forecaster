@@ -1,0 +1,269 @@
+{
+  "year": "1996",
+  "costs": [
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ],
+    [
+      {
+        "name": "Solid fuels",
+        "identifier": "D7DW",
+        "price": 45.4
+      },
+      {
+        "name": "Gas",
+        "identifier": "D7DU",
+        "price": 43.3
+      },
+      {
+        "name": "Electricity",
+        "identifier": "D7DT",
+        "price": 62.5
+      },
+      {
+        "name": "Liquid fuels",
+        "identifier": "D7DV",
+        "price": 33.2
+      }
+    ]
+  ]
+}
