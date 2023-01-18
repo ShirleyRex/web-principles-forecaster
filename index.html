@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forecaster</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost Forecaster</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     
-</body>
+    <div class="header">
+      <h1>Cost Forecaster</h1>
+      <button class="btn-forecaster btn mt-20" id="switchButton">Forecast Mode</button>
+    </div>
+    <div class="forecast-mode ds" id="forecastMode">
+      <canvas id="forecastChart"></canvas>
+    </div>
+    <div class="historical-mode pt-50" id="historyMode">
+      <canvas id="historyChart"></canvas>
+      <div class="btn-control">
+        <button class="control-btn btn mt-20" id="previous">Previous</button>
+        <button class="control-btn btn mt-20" id="next">Next</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <script src="app.js" type="module"></script>
+  </body>
 </html>
