@@ -44,6 +44,11 @@ h1{
     display: none;
 }
 
+.forecast-mode {
+  margin: 0 auto;
+  width: 60%;
+}
+
 .historical-mode {
   margin: 0 auto;
   width: 60%;
@@ -84,4 +89,8 @@ h1{
         width: 100%;
       }
       
+      .forecast-mode {
+        margin: 0 auto;
+        width: 100%;
+      }
 }

@@ -6,6 +6,31 @@ const prev = document.getElementById("previous");
 const forecastMode = document.getElementById("forecastMode");
 const historyMode = document.getElementById("historyMode");
 
+function getPast(data, length) {
+  return data.filter((item, i) => {
+    return i >= data.length - length;
+  });
+}
+
+function getLowest(data, key) {
+  return Math.min(
+    ...data.map((item) => {
+      return item[key];
+    })
+  );
+}
+
+function getHighest(data, key) {
+  return Math.max(
+    ...data.map((item) => {
+      return item[key];
+    })
+  );
+}
+
+function getCurrent(lowest, highest, value) {
+  return (1 + lowest / highest) * value;
+}
 
 const config = {
   type: "line",
@@ -139,54 +164,48 @@ function initialize(start = 0, end = 11) {
   chart.update();
 }
 
-function forecasteInitialize(start = 0, end = 11) {
-  forecastConfig.data.labels = data
-    .filter((price, i) => {
-      return i >= start && i <= end;
-    })
-    .map((label) => {
-      return label.label;
-    });
+function forecasteInitialize(data) {
+  forecastConfig.data.labels = data.map((item) => {
+    return item.label;
+  });
 
-  forecastConfig.data.datasets[0].data = data
-    .filter((price, i) => {
-      return i >= start && i <= end;
-    })
-    .map((price) => {
-      return price["solid fuels"];
-    });
+  forecastConfig.data.datasets[0].data = data.map((item) => {
+    return getCurrent(
+      getLowest(data, "solid fuels"),
+      getHighest(data, "solid fuels"),
+      item["solid fuels"]
+    );
+  });
 
-  forecastConfig.data.datasets[1].data = data
-    .filter((price, i) => {
-      return i >= start && i <= end;
-    })
-    .map((price) => {
-      return price["gas"];
-    });
+  forecastConfig.data.datasets[1].data = data.map((item) => {
+    return getCurrent(
+      getLowest(data, "gas"),
+      getHighest(data, "gas"),
+      item["gas"]
+    );
+  });
 
-  forecastConfig.data.datasets[2].data = data
-    .filter((price, i) => {
-      return i >= start && i <= end;
-    })
-    .map((price) => {
-      return price["electricity"];
-    });
+  forecastConfig.data.datasets[2].data = data.map((item) => {
+    return getCurrent(
+      getLowest(data, "electricity"),
+      getHighest(data, "electricity"),
+      item["electricity"]
+    );
+  });
 
-  forecastConfig.data.datasets[3].data = data
-    .filter((price, i) => {
-      return i >= start && i <= end;
-    })
-    .map((price) => {
-      return price["liquid fuels"];
-    });
+  forecastConfig.data.datasets[3].data = data.map((item) => {
+    return getCurrent(
+      getLowest(data, "liquid fuels"),
+      getHighest(data, "liquid fuels"),
+      item["liquid fuels"]
+    );
+  });
 
   forchart.update();
 }
 
 initialize();
-forecasteInitialize();
-
-
+forecasteInitialize(getPast(data, 12));
 
 next.addEventListener("click", () => {
   let totalSets = data.length;
@@ -201,26 +220,25 @@ next.addEventListener("click", () => {
 });
 
 switchButton.addEventListener("click", () => {
-  if (forecastMode.classList.contains("ds")){
-    switchButton.innerHTML = "History Mode"
-    forecastMode.classList.remove("ds")
-    historyMode.classList.add("ds")
-  }else{
-    switchButton.innerHTML = "Forecast Mode"
-    forecastMode.classList.add("ds")
-    historyMode.classList.remove("ds")
+  if (forecastMode.classList.contains("ds")) {
+    switchButton.innerHTML = "History Mode";
+    forecastMode.classList.remove("ds");
+    historyMode.classList.add("ds");
+  } else {
+    switchButton.innerHTML = "Forecast Mode";
+    forecastMode.classList.add("ds");
+    historyMode.classList.remove("ds");
   }
 });
-
 
 prev.addEventListener("click", () => {
   if (start <= 0) {
     alert("There are no more data");
-    return
+    return;
   }
 
-    start -= 12;
-    end -= 12;
+  start -= 12;
+  end -= 12;
 
-    initialize(start, end);
+  initialize(start, end);
 });
